@@ -159,6 +159,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (data) {
                 tableData = data;
+                $('#action').hide();
                 if (data.length == 0) {
                     $('tbody').append('<tr><td colspan=12 class="text-center" > No Result Found <td/> <tr/>');
 
@@ -400,6 +401,7 @@ $(document).ready(function () {
         $('.dataFilter[data-value="'+property+'"]').val("");
       }
     }
+
 
 
 

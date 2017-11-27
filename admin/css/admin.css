@@ -16,7 +16,7 @@
     position: absolute;
     padding: 15px;
     padding-left: 50px;
-    
+
 
 }
 
@@ -156,7 +156,7 @@ used to vertically center elements, may need modification if you're not using de
         border: 1px solid #ccc;
         display: block;
     }
-    
+
      #tablefilter th {
         padding:2px;
         border: none;
@@ -166,8 +166,8 @@ used to vertically center elements, may need modification if you're not using de
         white-space: normal;
         text-align: left;
     }
-    
-    
+
+
 
 }
 
@@ -225,7 +225,6 @@ Label the data
 #no-more-tables1 td:before {
     content: attr(data-title);
 }
-
 
 
 

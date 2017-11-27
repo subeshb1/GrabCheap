@@ -33,75 +33,30 @@ else {
     <?php include "include/header.php";?>
     <?php include ("include/imagemodal.php") ?>
 
-    <!-- Edit tab Modal-->
+    <!-- Action tab Modal-->
     <div class="modal fade" id="actionModal">
         <div class="modal-dialog">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Edit</h4>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="brand_name ">Brand</label>
-                            <input type="text" placeholder="Brand" class="form-control" id="brand_name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="subbrand_name ">Sub Brand</label>
-                            <input type="text" placeholder="Sub Brand" class="form-control" id="subbrand_name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="product_name ">Product</label>
-                            <input type="text" placeholder="Product Name" class="form-control" id="product_name" />
-                        </div>
-                        <div class="form-group">
-                            <label for="product_category ">Category</label>
-                            <input type="text" placeholder="Category" class="form-control" id="product_category" />
-                        </div>
-                        <div class="form-group">
-                            <label for="piece_code">Piece Code</label>
-                            <input type="text" placeholder="Piece Code" class="form-control" id="piece_code" />
-                        </div>
-                        <div class="form-group">
-                            <label for="piece_original_price">Original Price</label>
-                            <input type="text" placeholder="Original Price" class="form-control" id="piece_original_price" />
-                        </div>
-                        <div class="form-group">
-                            <label for="piece_marked_price">Marked Price</label>
-                            <input type="text" placeholder="Marked Price" class="form-control" id="piece_marked_price" />
-                        </div>
-                        <div class="form-group">
-                            <label for="Gender">Gender</label>
-                            <select class="form-control">
-                                <option value = "Male">Male</option>
-                                <option value = "Female">Female</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="piece_color">Piece Color</label>
-                            <input type="text" placeholder="Color" class="form-control" id="piece_color" />
-                        </div>
-                        <div class="form-group">
-                            <label for="piece_size">Piece Size</label>
-                            <input type="text" placeholder="Size" class="form-control" id="piece_size" />
-                        </div>
-                        <div class="form-group">
-                            <label for="piece_image">Image</label>
-                            <input type="file" placeholder="Size" class="form-control" id="piece_image" />
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+            <div class="modal-content">
+              <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h4 class="modal-title">Delete</h4>
+              </div>
 
 
+            <div class="modal-body">
+              <h4>Are you sure you want to Delete?</h4>
             </div>
-
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" id="deleteModalBut">Delete</button>
+            </div>
+            </div>
         </div>
     </div>
+
+
+
+
     <div id="wrapper">
         <?php include "include/sidebar.php";?>
 
@@ -119,8 +74,11 @@ else {
 
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#actionModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#actionModal">Delete</button>
+                        <div class="collapse" id="action">
+
+                        <button type="button" class="btn btn-primary" id="editAction">Edit</button>
+                        <button type="button" class="btn btn-primary" id="deleteAction">Delete</button>
+                        </div>
 
                     </div>
                     <div class="panel-body">

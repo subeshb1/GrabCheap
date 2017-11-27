@@ -1,0 +1,244 @@
+
+
+#sidebar-wrapper {
+
+    position: fixed;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 2;
+
+
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    padding-left: 50px;
+    
+
+}
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 250px;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+
+#sidebar-button {
+    position: fixed;
+    width: 40px;
+    height: 100%;
+    z-index: 1;
+
+}
+
+
+/*table*/
+
+.panel-table .panel-body .table-bordered tr.select-tr:hover {
+    background: rgb(41, 114, 167);
+    color: white;
+}
+
+.panel-table .panel-body .table-bordered tbody tr:hover {
+    background: rgb(234, 234, 234);
+
+}
+
+.panel-table .panel-body {
+    padding: 0;
+}
+
+.panel-table .panel-body .table-bordered {
+    border-style: none;
+    margin: 0;
+}
+
+.panel-table .panel-body .table-bordered tr.select-tr {
+    background: rgb(41, 114, 167);
+    color: white;
+}
+
+
+.panel-table .panel-footer .pagination {
+    margin: 0;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border-radius: 50% !important;
+    margin: 0 5px;
+}
+
+.pagination {
+    margin: 0;
+}
+/*
+used to vertically center elements, may need modification if you're not using default sizes.
+*/
+
+
+
+.panel-table .panel-heading .col h3 {
+    line-height: 30px;
+    height: 30px;
+}
+
+.panel-table .panel-body .table-bordered > tbody > tr > td {
+    line-height: 34px;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr:not(#tablefilter) {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-tables tr {
+        border: 1px solid #ccc;
+    }
+
+    #no-more-tables td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #no-more-tables td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /*
+  Label the data
+  */
+    #no-more-tables td:before {
+        content: attr(data-title);
+    }
+    #tablefilter tr {
+        border: 1px solid #ccc;
+        display: block;
+    }
+    
+     #tablefilter th {
+        padding:2px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+
+        white-space: normal;
+        text-align: left;
+    }
+    
+    
+
+}
+
+
+
+
+
+/* Force table to not be like tables anymore */
+#no-more-tables1 table,
+#no-more-tables1 thead,
+#no-more-tables1 tbody,
+#no-more-tables1 th,
+#no-more-tables1 td,
+#no-more-tables1 tr {
+    display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+#no-more-tables1 thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#no-more-tables1 tr {
+    border: 1px solid #ccc;
+}
+
+#no-more-tables1 td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+}
+
+#no-more-tables1 td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+}
+
+/*
+Label the data
+*/
+#no-more-tables1 td:before {
+    content: attr(data-title);
+}
+
+
+
+
+
+
+/*Table sortable*/
+.sortable {
+  cursor: pointer;
+  -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+.sortable:hover {
+  background: rgb(234, 234, 234);
+
+}
